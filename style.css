@@ -1,0 +1,42 @@
+body {
+	background-image: linear-gradient(to right, #89d1fa, #d4efff);
+}
+
+main {
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes img_rotate {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(180deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.glass {
+	width: 60%;
+	height: 80vh;
+	border-radius: 3vh;
+	background-color: rgba(240, 243, 250, 0.6);
+	min-height: 90vh;
+	box-shadow: -3px 5px 20px rgba(15,15,15,0.5);
+}
+#song_img {
+	margin-left:25%;
+	margin-top: 5%;
+	width: 50%;
+	border-radius: 100%;
+	animation-name: img_rotate;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	box-shadow: 3px 5px 15px black;
+}
+#play_button {
+	width: 36px;
+	height: 36px;
+	border-width: 0px;
+
+}
